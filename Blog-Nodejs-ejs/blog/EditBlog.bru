@@ -1,0 +1,23 @@
+meta {
+  name: EditBlog
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:5000/blog/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "หัวข่อ", 
+    "description": "ฟหกวบมฟหยสกฟหก"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

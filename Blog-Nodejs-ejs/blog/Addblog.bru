@@ -1,0 +1,23 @@
+meta {
+  name: Addblog
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5000/blog/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    title: "หัวข่อ", 
+    description: "ฟหกวบมฟหยสกฟหก"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
