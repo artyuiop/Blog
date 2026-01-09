@@ -2,7 +2,6 @@ import express,{Express } from "express";
 import path from "node:path";
 import morgan from 'morgan'
 const app: Express = express()
-import './interface/global'
 
 
 // import routes
